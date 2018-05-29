@@ -5,401 +5,23 @@
     <description/>
     <extended_description/>
     <trans_version/>
-    <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
-    <directory>/</directory>
+    <directory>&#47;</directory>
     <parameters>
     </parameters>
     <log>
-      <trans-log-table>
-        <connection/>
-        <schema/>
-        <table/>
-        <size_limit_lines/>
-        <interval/>
-        <timeout_days/>
-        <field>
-          <id>ID_BATCH</id>
-          <enabled>Y</enabled>
-          <name>ID_BATCH</name>
-        </field>
-        <field>
-          <id>CHANNEL_ID</id>
-          <enabled>Y</enabled>
-          <name>CHANNEL_ID</name>
-        </field>
-        <field>
-          <id>TRANSNAME</id>
-          <enabled>Y</enabled>
-          <name>TRANSNAME</name>
-        </field>
-        <field>
-          <id>STATUS</id>
-          <enabled>Y</enabled>
-          <name>STATUS</name>
-        </field>
-        <field>
-          <id>LINES_READ</id>
-          <enabled>Y</enabled>
-          <name>LINES_READ</name>
-          <subject/>
-        </field>
-        <field>
-          <id>LINES_WRITTEN</id>
-          <enabled>Y</enabled>
-          <name>LINES_WRITTEN</name>
-          <subject/>
-        </field>
-        <field>
-          <id>LINES_UPDATED</id>
-          <enabled>Y</enabled>
-          <name>LINES_UPDATED</name>
-          <subject/>
-        </field>
-        <field>
-          <id>LINES_INPUT</id>
-          <enabled>Y</enabled>
-          <name>LINES_INPUT</name>
-          <subject/>
-        </field>
-        <field>
-          <id>LINES_OUTPUT</id>
-          <enabled>Y</enabled>
-          <name>LINES_OUTPUT</name>
-          <subject/>
-        </field>
-        <field>
-          <id>LINES_REJECTED</id>
-          <enabled>Y</enabled>
-          <name>LINES_REJECTED</name>
-          <subject/>
-        </field>
-        <field>
-          <id>ERRORS</id>
-          <enabled>Y</enabled>
-          <name>ERRORS</name>
-        </field>
-        <field>
-          <id>STARTDATE</id>
-          <enabled>Y</enabled>
-          <name>STARTDATE</name>
-        </field>
-        <field>
-          <id>ENDDATE</id>
-          <enabled>Y</enabled>
-          <name>ENDDATE</name>
-        </field>
-        <field>
-          <id>LOGDATE</id>
-          <enabled>Y</enabled>
-          <name>LOGDATE</name>
-        </field>
-        <field>
-          <id>DEPDATE</id>
-          <enabled>Y</enabled>
-          <name>DEPDATE</name>
-        </field>
-        <field>
-          <id>REPLAYDATE</id>
-          <enabled>Y</enabled>
-          <name>REPLAYDATE</name>
-        </field>
-        <field>
-          <id>LOG_FIELD</id>
-          <enabled>Y</enabled>
-          <name>LOG_FIELD</name>
-        </field>
-        <field>
-          <id>EXECUTING_SERVER</id>
-          <enabled>N</enabled>
-          <name>EXECUTING_SERVER</name>
-        </field>
-        <field>
-          <id>EXECUTING_USER</id>
-          <enabled>N</enabled>
-          <name>EXECUTING_USER</name>
-        </field>
-        <field>
-          <id>CLIENT</id>
-          <enabled>N</enabled>
-          <name>CLIENT</name>
-        </field>
-      </trans-log-table>
-      <perf-log-table>
-        <connection/>
-        <schema/>
-        <table/>
-        <interval/>
-        <timeout_days/>
-        <field>
-          <id>ID_BATCH</id>
-          <enabled>Y</enabled>
-          <name>ID_BATCH</name>
-        </field>
-        <field>
-          <id>SEQ_NR</id>
-          <enabled>Y</enabled>
-          <name>SEQ_NR</name>
-        </field>
-        <field>
-          <id>LOGDATE</id>
-          <enabled>Y</enabled>
-          <name>LOGDATE</name>
-        </field>
-        <field>
-          <id>TRANSNAME</id>
-          <enabled>Y</enabled>
-          <name>TRANSNAME</name>
-        </field>
-        <field>
-          <id>STEPNAME</id>
-          <enabled>Y</enabled>
-          <name>STEPNAME</name>
-        </field>
-        <field>
-          <id>STEP_COPY</id>
-          <enabled>Y</enabled>
-          <name>STEP_COPY</name>
-        </field>
-        <field>
-          <id>LINES_READ</id>
-          <enabled>Y</enabled>
-          <name>LINES_READ</name>
-        </field>
-        <field>
-          <id>LINES_WRITTEN</id>
-          <enabled>Y</enabled>
-          <name>LINES_WRITTEN</name>
-        </field>
-        <field>
-          <id>LINES_UPDATED</id>
-          <enabled>Y</enabled>
-          <name>LINES_UPDATED</name>
-        </field>
-        <field>
-          <id>LINES_INPUT</id>
-          <enabled>Y</enabled>
-          <name>LINES_INPUT</name>
-        </field>
-        <field>
-          <id>LINES_OUTPUT</id>
-          <enabled>Y</enabled>
-          <name>LINES_OUTPUT</name>
-        </field>
-        <field>
-          <id>LINES_REJECTED</id>
-          <enabled>Y</enabled>
-          <name>LINES_REJECTED</name>
-        </field>
-        <field>
-          <id>ERRORS</id>
-          <enabled>Y</enabled>
-          <name>ERRORS</name>
-        </field>
-        <field>
-          <id>INPUT_BUFFER_ROWS</id>
-          <enabled>Y</enabled>
-          <name>INPUT_BUFFER_ROWS</name>
-        </field>
-        <field>
-          <id>OUTPUT_BUFFER_ROWS</id>
-          <enabled>Y</enabled>
-          <name>OUTPUT_BUFFER_ROWS</name>
-        </field>
-      </perf-log-table>
-      <channel-log-table>
-        <connection/>
-        <schema/>
-        <table/>
-        <timeout_days/>
-        <field>
-          <id>ID_BATCH</id>
-          <enabled>Y</enabled>
-          <name>ID_BATCH</name>
-        </field>
-        <field>
-          <id>CHANNEL_ID</id>
-          <enabled>Y</enabled>
-          <name>CHANNEL_ID</name>
-        </field>
-        <field>
-          <id>LOG_DATE</id>
-          <enabled>Y</enabled>
-          <name>LOG_DATE</name>
-        </field>
-        <field>
-          <id>LOGGING_OBJECT_TYPE</id>
-          <enabled>Y</enabled>
-          <name>LOGGING_OBJECT_TYPE</name>
-        </field>
-        <field>
-          <id>OBJECT_NAME</id>
-          <enabled>Y</enabled>
-          <name>OBJECT_NAME</name>
-        </field>
-        <field>
-          <id>OBJECT_COPY</id>
-          <enabled>Y</enabled>
-          <name>OBJECT_COPY</name>
-        </field>
-        <field>
-          <id>REPOSITORY_DIRECTORY</id>
-          <enabled>Y</enabled>
-          <name>REPOSITORY_DIRECTORY</name>
-        </field>
-        <field>
-          <id>FILENAME</id>
-          <enabled>Y</enabled>
-          <name>FILENAME</name>
-        </field>
-        <field>
-          <id>OBJECT_ID</id>
-          <enabled>Y</enabled>
-          <name>OBJECT_ID</name>
-        </field>
-        <field>
-          <id>OBJECT_REVISION</id>
-          <enabled>Y</enabled>
-          <name>OBJECT_REVISION</name>
-        </field>
-        <field>
-          <id>PARENT_CHANNEL_ID</id>
-          <enabled>Y</enabled>
-          <name>PARENT_CHANNEL_ID</name>
-        </field>
-        <field>
-          <id>ROOT_CHANNEL_ID</id>
-          <enabled>Y</enabled>
-          <name>ROOT_CHANNEL_ID</name>
-        </field>
-      </channel-log-table>
-      <step-log-table>
-        <connection/>
-        <schema/>
-        <table/>
-        <timeout_days/>
-        <field>
-          <id>ID_BATCH</id>
-          <enabled>Y</enabled>
-          <name>ID_BATCH</name>
-        </field>
-        <field>
-          <id>CHANNEL_ID</id>
-          <enabled>Y</enabled>
-          <name>CHANNEL_ID</name>
-        </field>
-        <field>
-          <id>LOG_DATE</id>
-          <enabled>Y</enabled>
-          <name>LOG_DATE</name>
-        </field>
-        <field>
-          <id>TRANSNAME</id>
-          <enabled>Y</enabled>
-          <name>TRANSNAME</name>
-        </field>
-        <field>
-          <id>STEPNAME</id>
-          <enabled>Y</enabled>
-          <name>STEPNAME</name>
-        </field>
-        <field>
-          <id>STEP_COPY</id>
-          <enabled>Y</enabled>
-          <name>STEP_COPY</name>
-        </field>
-        <field>
-          <id>LINES_READ</id>
-          <enabled>Y</enabled>
-          <name>LINES_READ</name>
-        </field>
-        <field>
-          <id>LINES_WRITTEN</id>
-          <enabled>Y</enabled>
-          <name>LINES_WRITTEN</name>
-        </field>
-        <field>
-          <id>LINES_UPDATED</id>
-          <enabled>Y</enabled>
-          <name>LINES_UPDATED</name>
-        </field>
-        <field>
-          <id>LINES_INPUT</id>
-          <enabled>Y</enabled>
-          <name>LINES_INPUT</name>
-        </field>
-        <field>
-          <id>LINES_OUTPUT</id>
-          <enabled>Y</enabled>
-          <name>LINES_OUTPUT</name>
-        </field>
-        <field>
-          <id>LINES_REJECTED</id>
-          <enabled>Y</enabled>
-          <name>LINES_REJECTED</name>
-        </field>
-        <field>
-          <id>ERRORS</id>
-          <enabled>Y</enabled>
-          <name>ERRORS</name>
-        </field>
-        <field>
-          <id>LOG_FIELD</id>
-          <enabled>N</enabled>
-          <name>LOG_FIELD</name>
-        </field>
-      </step-log-table>
-      <metrics-log-table>
-        <connection/>
-        <schema/>
-        <table/>
-        <timeout_days/>
-        <field>
-          <id>ID_BATCH</id>
-          <enabled>Y</enabled>
-          <name>ID_BATCH</name>
-        </field>
-        <field>
-          <id>CHANNEL_ID</id>
-          <enabled>Y</enabled>
-          <name>CHANNEL_ID</name>
-        </field>
-        <field>
-          <id>LOG_DATE</id>
-          <enabled>Y</enabled>
-          <name>LOG_DATE</name>
-        </field>
-        <field>
-          <id>METRICS_DATE</id>
-          <enabled>Y</enabled>
-          <name>METRICS_DATE</name>
-        </field>
-        <field>
-          <id>METRICS_CODE</id>
-          <enabled>Y</enabled>
-          <name>METRICS_CODE</name>
-        </field>
-        <field>
-          <id>METRICS_DESCRIPTION</id>
-          <enabled>Y</enabled>
-          <name>METRICS_DESCRIPTION</name>
-        </field>
-        <field>
-          <id>METRICS_SUBJECT</id>
-          <enabled>Y</enabled>
-          <name>METRICS_SUBJECT</name>
-        </field>
-        <field>
-          <id>METRICS_TYPE</id>
-          <enabled>Y</enabled>
-          <name>METRICS_TYPE</name>
-        </field>
-        <field>
-          <id>METRICS_VALUE</id>
-          <enabled>Y</enabled>
-          <name>METRICS_VALUE</name>
-        </field>
-      </metrics-log-table>
+      <read/>
+      <write/>
+      <input/>
+      <output/>
+      <update/>
+      <rejected/>
+      <connection/>
+      <table/>
+      <step_performance_table/>
+      <use_batchid>N</use_batchid>
+      <use_logfield>N</use_logfield>
+      <size_limit_lines/>
     </log>
     <maxdate>
       <connection/>
@@ -418,7 +40,6 @@
     <shared_objects_file/>
     <capture_step_performance>N</capture_step_performance>
     <step_performance_capturing_delay>1000</step_performance_capturing_delay>
-    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
     <dependencies>
     </dependencies>
     <partitionschemas>
@@ -427,12 +48,8 @@
     </slaveservers>
     <clusterschemas>
     </clusterschemas>
-    <created_user>-</created_user>
-    <created_date>2018/05/27 15:36:44.988</created_date>
-    <modified_user>-</modified_user>
-    <modified_date>2018/05/27 15:36:44.988</modified_date>
-    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
-    <is_key_private>N</is_key_private>
+  <modified_user>-</modified_user>
+  <modified_date>2018&#47;05&#47;27 15:36:44.988</modified_date>
   </info>
   <notepads>
   </notepads>
@@ -449,209 +66,77 @@
     <data_tablespace/>
     <index_tablespace/>
     <attributes>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>IS_CLUSTERED</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>PORT_NUMBER</code>
-        <attribute>5432</attribute>
-      </attribute>
-      <attribute>
-        <code>PRESERVE_RESERVED_WORD_CASE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>QUOTE_ALL_FIELDS</code>
-        <attribute>N</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
-        <attribute>Y</attribute>
-      </attribute>
-      <attribute>
-        <code>USE_POOLING</code>
-        <attribute>N</attribute>
-      </attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
     </attributes>
   </connection>
   <order>
-    <hop>
-      <from>Read Contenedores Data</from>
-      <to>divido dias de rango</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>divido dias de rango</from>
-      <to>borro Y</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Split field to rows</from>
-      <to>me quedo con los dias</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>me quedo con los dias</from>
-      <to>borro dias duplicados</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>borro dias duplicados</from>
-      <to>agrego id de dias</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>borro Y</from>
-      <to>borro comas</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>agrego id de dias</from>
-      <to>agrego tipo dia</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>borro comas</from>
-      <to>quito plural sabado</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>quito plural sabado</from>
-      <to>quito plural domingo</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>quito plural domingo</from>
-      <to>Split field to rows</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>agrego tipo dia</from>
-      <to>ordeno por tipo de dia</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>ordeno por tipo de dia</from>
-      <to>agrego id por tipo de dia</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>agrego id por tipo de dia</from>
-      <to>Guardo dimension turnoDias</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>elimino rangos repetidos</from>
-      <to>agrego id rango horas</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>agrego id rango horas</from>
-      <to>guardo dimension turnoHoras</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>me quedo con los rangos</from>
-      <to>limpio matutinos</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>limpio matutinos</from>
-      <to>limpio vespertinos</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>limpio vespertinos</from>
-      <to>limpio nocturnos</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>limpio nocturnos</from>
-      <to>elimino rangos repetidos</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>circuitos csv</from>
-      <to>selecciono vertices del circuito</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>selecciono vertices del circuito</from>
-      <to>orden por id circuito</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>selecciono datos del contenedor</from>
-      <to>orden por id circuito 2</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>orden por id circuito</from>
-      <to>join de circuitos y contenedor</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>orden por id circuito 2</from>
-      <to>join de circuitos y contenedor</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>join de circuitos y contenedor</from>
-      <to>elimino id duplicado del circuito</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>elimino id duplicado del circuito</from>
-      <to>guardo dimension contResidous</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Read Contenedores Data</from>
-      <to>selecciono datos del contenedor</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>divido dias de rango</from>
-      <to>me quedo con los rangos</to>
-      <enabled>Y</enabled>
-    </hop>
-  </order>
+  <hop> <from>Read Contenedores Data</from><to>divido dias de rango</to><enabled>Y</enabled> </hop>  <hop> <from>divido dias de rango</from><to>borro Y</to><enabled>Y</enabled> </hop>  <hop> <from>Split field to rows</from><to>me quedo con los dias</to><enabled>Y</enabled> </hop>  <hop> <from>me quedo con los dias</from><to>borro dias duplicados</to><enabled>Y</enabled> </hop>  <hop> <from>borro dias duplicados</from><to>agrego id de dias</to><enabled>Y</enabled> </hop>  <hop> <from>borro Y</from><to>borro comas</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id de dias</from><to>agrego tipo dia</to><enabled>Y</enabled> </hop>  <hop> <from>borro comas</from><to>quito plural sabado</to><enabled>Y</enabled> </hop>  <hop> <from>quito plural sabado</from><to>quito plural domingo</to><enabled>Y</enabled> </hop>  <hop> <from>quito plural domingo</from><to>Split field to rows</to><enabled>Y</enabled> </hop>  <hop> <from>agrego tipo dia</from><to>ordeno por tipo de dia</to><enabled>Y</enabled> </hop>  <hop> <from>ordeno por tipo de dia</from><to>agrego id por tipo de dia</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id por tipo de dia</from><to>Guardo dimension turnoDias</to><enabled>Y</enabled> </hop>  <hop> <from>elimino rangos repetidos</from><to>agrego id rango horas</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id rango horas</from><to>guardo dimension turnoHoras</to><enabled>Y</enabled> </hop>  <hop> <from>me quedo con los rangos</from><to>limpio matutinos</to><enabled>Y</enabled> </hop>  <hop> <from>limpio matutinos</from><to>limpio vespertinos</to><enabled>Y</enabled> </hop>  <hop> <from>limpio vespertinos</from><to>limpio nocturnos</to><enabled>Y</enabled> </hop>  <hop> <from>limpio nocturnos</from><to>elimino rangos repetidos</to><enabled>Y</enabled> </hop>  <hop> <from>circuitos csv</from><to>selecciono vertices del circuito</to><enabled>Y</enabled> </hop>  <hop> <from>selecciono vertices del circuito</from><to>orden por id circuito</to><enabled>Y</enabled> </hop>  <hop> <from>selecciono datos del contenedor</from><to>orden por id circuito 2</to><enabled>Y</enabled> </hop>  <hop> <from>orden por id circuito</from><to>join de circuitos y contenedor</to><enabled>Y</enabled> </hop>  <hop> <from>orden por id circuito 2</from><to>join de circuitos y contenedor</to><enabled>Y</enabled> </hop>  <hop> <from>join de circuitos y contenedor</from><to>elimino id duplicado del circuito</to><enabled>Y</enabled> </hop>  <hop> <from>elimino id duplicado del circuito</from><to>guardo dimension contResidous</to><enabled>Y</enabled> </hop>  <hop> <from>Read Contenedores Data</from><to>selecciono datos del contenedor</to><enabled>Y</enabled> </hop>  <hop> <from>divido dias de rango</from><to>me quedo con los rangos</to><enabled>Y</enabled> </hop>  <hop> <from>ESRI Shapefile Reader</from><to>Table output</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>Guardo dimension turnoDias</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>dbdw2018</connection>
+    <schema>public</schema>
+    <table>turnoDias</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1088</xloc>
+      <yloc>272</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
   <step>
     <name>Read Contenedores Data</name>
     <type>CsvInput</type>
     <description/>
     <distribute>N</distribute>
-    <custom_distribution/>
     <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
     <filename>C:\grondan\Fing\DW\Contenedores_domiciliarios.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
     <separator>;</separator>
-    <enclosure>"</enclosure>
+    <enclosure>&quot;</enclosure>
     <header>Y</header>
     <buffer_size>50000</buffer_size>
     <lazy_conversion>Y</lazy_conversion>
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
-    <newline_possible>N</newline_possible>
     <encoding/>
     <fields>
       <field>
@@ -710,469 +195,131 @@
         <trim_type>none</trim_type>
       </field>
     </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>64</xloc>
       <yloc>112</yloc>
       <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>divido dias de rango</name>
-    <type>FieldSplitter</type>
-    <description/>
-    <distribute>N</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <splitfield>TURNO_HORARIO</splitfield>
-    <delimiter> CON FERIADOS LABORABLES:</delimiter>
-    <enclosure/>
-    <fields>
-      <field>
-        <name>dias</name>
-        <id/>
-        <idrem>N</idrem>
-        <type>String</type>
-        <format/>
-        <group/>
-        <decimal/>
-        <currency/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <nullif/>
-        <ifnull/>
-        <trimtype>none</trimtype>
-      </field>
-      <field>
-        <name>rango_horario</name>
-        <id/>
-        <idrem>N</idrem>
-        <type>String</type>
-        <format/>
-        <group/>
-        <decimal/>
-        <currency/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <nullif/>
-        <ifnull/>
-        <trimtype>none</trimtype>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>208</xloc>
-      <yloc>144</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
+      </GUI>
+    </step>
+
   <step>
     <name>Split field to rows</name>
     <type>SplitFieldToRows3</type>
     <description/>
     <distribute>N</distribute>
-    <custom_distribution/>
     <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <splitfield>dias</splitfield>
-    <delimiter>\s+</delimiter>
-    <newfield>dias</newfield>
-    <rownum>N</rownum>
-    <rownum_field/>
-    <resetrownumber>Y</resetrownumber>
-    <delimiter_is_regex>Y</delimiter_is_regex>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+   <splitfield>dias</splitfield>
+   <delimiter>\s+</delimiter>
+   <newfield>dias</newfield>
+   <rownum>N</rownum>
+   <rownum_field/>
+   <resetrownumber>Y</resetrownumber>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>640</xloc>
       <yloc>160</yloc>
       <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>guardo dimension contResidous</name>
-    <type>TableOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>dbdw2018</connection>
-    <schema>public</schema>
-    <table>contResiduos</table>
-    <commit>1000</commit>
-    <truncate>Y</truncate>
-    <ignore_errors>N</ignore_errors>
-    <use_batch>Y</use_batch>
-    <specify_fields>N</specify_fields>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <tablename_in_field>N</tablename_in_field>
-    <tablename_field/>
-    <tablename_in_table>Y</tablename_in_table>
-    <return_keys>N</return_keys>
-    <return_field/>
-    <fields>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1152</xloc>
-      <yloc>0</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>borro Y</name>
-    <type>ReplaceString</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <in_stream_name>COD_CIRCUITO</in_stream_name>
-        <out_stream_name/>
-        <use_regex>no</use_regex>
-        <replace_string/>
-        <replace_by_string/>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-      <field>
-        <in_stream_name>dias</in_stream_name>
-        <out_stream_name/>
-        <use_regex>no</use_regex>
-        <replace_string>Y</replace_string>
-        <replace_by_string/>
-        <set_empty_string>Y</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-      <field>
-        <in_stream_name>rango_horario</in_stream_name>
-        <out_stream_name/>
-        <use_regex>no</use_regex>
-        <replace_string/>
-        <replace_by_string/>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>288</xloc>
-      <yloc>144</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>me quedo con los dias</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>GID</name>
-        <rename/>
-      </field>
-      <field>
-        <name>COD_CIRCUITO</name>
-        <rename/>
-      </field>
-      <field>
-        <name>dias</name>
-        <rename/>
-      </field>
-      <field>
-        <name>rango_horario</name>
-        <rename/>
-      </field>
-      <field>
-        <name>X</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Y</name>
-        <rename/>
-      </field>
-      <field>
-        <name>dias_1</name>
-        <rename/>
-      </field>
-      <select_unspecified>N</select_unspecified>
-      <remove>
-        <name>GID</name>
-      </remove>
-      <remove>
-        <name>COD_CIRCUITO</name>
-      </remove>
-      <remove>
-        <name>dias</name>
-      </remove>
-      <remove>
-        <name>rango_horario</name>
-      </remove>
-      <remove>
-        <name>X</name>
-      </remove>
-      <remove>
-        <name>Y</name>
-      </remove>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>640</xloc>
-      <yloc>240</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Guardo dimension turnoDias</name>
-    <type>TableOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>dbdw2018</connection>
-    <schema>public</schema>
-    <table>turnoDias</table>
-    <commit>1000</commit>
-    <truncate>Y</truncate>
-    <ignore_errors>N</ignore_errors>
-    <use_batch>Y</use_batch>
-    <specify_fields>N</specify_fields>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <tablename_in_field>N</tablename_in_field>
-    <tablename_field/>
-    <tablename_in_table>Y</tablename_in_table>
-    <return_keys>N</return_keys>
-    <return_field/>
-    <fields>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1088</xloc>
-      <yloc>272</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>borro dias duplicados</name>
-    <type>UniqueRowsByHashSet</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <store_values>N</store_values>
-    <reject_duplicate_row>N</reject_duplicate_row>
-    <error_description/>
-    <fields>
-      <field>
-        <name>dias_1</name>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>784</xloc>
-      <yloc>224</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
+      </GUI>
+    </step>
+
   <step>
     <name>agrego id de dias</name>
     <type>Sequence</type>
     <description/>
     <distribute>Y</distribute>
-    <custom_distribution/>
     <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <valuename>idDia</valuename>
-    <use_database>N</use_database>
-    <connection>dbdw2018</connection>
-    <schema/>
-    <seqname>SEQ_</seqname>
-    <use_counter>Y</use_counter>
-    <counter_name/>
-    <start_at>1</start_at>
-    <increment_by>1</increment_by>
-    <max_value>999999999</max_value>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <valuename>idDia</valuename>
+      <use_database>N</use_database>
+      <connection>dbdw2018</connection>
+      <schema/>
+      <seqname>SEQ_</seqname>
+      <use_counter>Y</use_counter>
+      <counter_name/>
+      <start_at>1</start_at>
+      <increment_by>1</increment_by>
+      <max_value>999999999</max_value>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>848</xloc>
       <yloc>304</yloc>
       <draw>Y</draw>
-    </GUI>
-  </step>
+      </GUI>
+    </step>
+
   <step>
-    <name>borro comas</name>
-    <type>ReplaceString</type>
+    <name>agrego id por tipo de dia</name>
+    <type>ValueMapper</type>
     <description/>
     <distribute>Y</distribute>
-    <custom_distribution/>
     <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <field_to_use>nomTipo</field_to_use>
+    <target_field>idTipo</target_field>
+    <non_match_default>1</non_match_default>
     <fields>
       <field>
-        <in_stream_name>COD_CIRCUITO</in_stream_name>
-        <out_stream_name/>
-        <use_regex>no</use_regex>
-        <replace_string/>
-        <replace_by_string/>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-      <field>
-        <in_stream_name>dias</in_stream_name>
-        <out_stream_name/>
-        <use_regex>no</use_regex>
-        <replace_string>,</replace_string>
-        <replace_by_string/>
-        <set_empty_string>Y</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-      <field>
-        <in_stream_name>rango_horario</in_stream_name>
-        <out_stream_name/>
-        <use_regex>no</use_regex>
-        <replace_string/>
-        <replace_by_string/>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
+        <source_value>finDeSemana</source_value>
+        <target_value>2</target_value>
       </field>
     </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>368</xloc>
-      <yloc>144</yloc>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>992</xloc>
+      <yloc>400</yloc>
       <draw>Y</draw>
-    </GUI>
-  </step>
+      </GUI>
+    </step>
+
+  <step>
+    <name>agrego id rango horas</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <valuename>idRango</valuename>
+      <use_database>N</use_database>
+      <connection>dbdw2018</connection>
+      <schema/>
+      <seqname>SEQ_</seqname>
+      <use_counter>Y</use_counter>
+      <counter_name/>
+      <start_at>1</start_at>
+      <increment_by>1</increment_by>
+      <max_value>999999999</max_value>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>752</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
   <step>
     <name>agrego tipo dia</name>
     <type>ValueMapper</type>
     <description/>
     <distribute>Y</distribute>
-    <custom_distribution/>
     <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
     <field_to_use>dias_1</field_to_use>
     <target_field>nomTipo</target_field>
     <non_match_default>entreSemana</non_match_default>
@@ -1186,30 +333,24 @@
         <target_value>finDeSemana</target_value>
       </field>
     </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>736</xloc>
       <yloc>368</yloc>
       <draw>Y</draw>
-    </GUI>
-  </step>
+      </GUI>
+    </step>
+
   <step>
-    <name>quito plural sabado</name>
+    <name>borro Y</name>
     <type>ReplaceString</type>
     <description/>
     <distribute>Y</distribute>
-    <custom_distribution/>
     <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
     <fields>
       <field>
         <in_stream_name>COD_CIRCUITO</in_stream_name>
@@ -1217,23 +358,17 @@
         <use_regex>no</use_regex>
         <replace_string/>
         <replace_by_string/>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
         <whole_word>no</whole_word>
         <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
       </field>
       <field>
         <in_stream_name>dias</in_stream_name>
         <out_stream_name/>
         <use_regex>no</use_regex>
-        <replace_string>SABADOS</replace_string>
-        <replace_by_string>SABADO</replace_by_string>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
+        <replace_string>Y</replace_string>
+        <replace_by_string/>
         <whole_word>no</whole_word>
         <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
       </field>
       <field>
         <in_stream_name>rango_horario</in_stream_name>
@@ -1241,524 +376,106 @@
         <use_regex>no</use_regex>
         <replace_string/>
         <replace_by_string/>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
         <whole_word>no</whole_word>
         <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
       </field>
     </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>448</xloc>
-      <yloc>128</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>quito plural domingo</name>
-    <type>ReplaceString</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <in_stream_name>COD_CIRCUITO</in_stream_name>
-        <out_stream_name/>
-        <use_regex>no</use_regex>
-        <replace_string/>
-        <replace_by_string/>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-      <field>
-        <in_stream_name>dias</in_stream_name>
-        <out_stream_name/>
-        <use_regex>no</use_regex>
-        <replace_string>DOMINGOS</replace_string>
-        <replace_by_string>DOMINGO</replace_by_string>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-      <field>
-        <in_stream_name>rango_horario</in_stream_name>
-        <out_stream_name/>
-        <use_regex>no</use_regex>
-        <replace_string/>
-        <replace_by_string/>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>544</xloc>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>288</xloc>
       <yloc>144</yloc>
       <draw>Y</draw>
-    </GUI>
-  </step>
+      </GUI>
+    </step>
+
   <step>
-    <name>ordeno por tipo de dia</name>
-    <type>SortRows</type>
+    <name>borro comas</name>
+    <type>ReplaceString</type>
     <description/>
     <distribute>Y</distribute>
-    <custom_distribution/>
     <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
     <fields>
       <field>
-        <name>nomTipo</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
+        <in_stream_name>COD_CIRCUITO</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string/>
+        <replace_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>dias</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>,</replace_string>
+        <replace_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>rango_horario</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string/>
+        <replace_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
       </field>
     </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>848</xloc>
-      <yloc>400</yloc>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>368</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
-    </GUI>
-  </step>
+      </GUI>
+    </step>
+
   <step>
-    <name>agrego id por tipo de dia</name>
-    <type>ValueMapper</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <field_to_use>nomTipo</field_to_use>
-    <target_field>idTipo</target_field>
-    <non_match_default>1</non_match_default>
-    <fields>
-      <field>
-        <source_value>finDeSemana</source_value>
-        <target_value>2</target_value>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>992</xloc>
-      <yloc>400</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>me quedo con los rangos</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>GID</name>
-        <rename/>
-      </field>
-      <field>
-        <name>COD_CIRCUITO</name>
-        <rename/>
-      </field>
-      <field>
-        <name>dias</name>
-        <rename/>
-      </field>
-      <field>
-        <name>rango_horario</name>
-        <rename/>
-      </field>
-      <field>
-        <name>X</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Y</name>
-        <rename/>
-      </field>
-      <select_unspecified>N</select_unspecified>
-      <remove>
-        <name>GID</name>
-      </remove>
-      <remove>
-        <name>COD_CIRCUITO</name>
-      </remove>
-      <remove>
-        <name>dias</name>
-      </remove>
-      <remove>
-        <name>X</name>
-      </remove>
-      <remove>
-        <name>Y</name>
-      </remove>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>464</xloc>
-      <yloc>272</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>guardo dimension turnoHoras</name>
-    <type>TableOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>dbdw2018</connection>
-    <schema>public</schema>
-    <table>turnoHoras</table>
-    <commit>1000</commit>
-    <truncate>Y</truncate>
-    <ignore_errors>N</ignore_errors>
-    <use_batch>Y</use_batch>
-    <specify_fields>N</specify_fields>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <tablename_in_field>N</tablename_in_field>
-    <tablename_field/>
-    <tablename_in_table>Y</tablename_in_table>
-    <return_keys>N</return_keys>
-    <return_field/>
-    <fields>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1024</xloc>
-      <yloc>512</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>elimino rangos repetidos</name>
+    <name>borro dias duplicados</name>
     <type>UniqueRowsByHashSet</type>
     <description/>
     <distribute>Y</distribute>
-    <custom_distribution/>
     <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <store_values>N</store_values>
-    <reject_duplicate_row>N</reject_duplicate_row>
-    <error_description/>
-    <fields>
-      <field>
-        <name>rango_horario</name>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>576</xloc>
-      <yloc>496</yloc>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <store_values>N</store_values>
+    <fields>      <field>        <name>dias_1</name>
+        </field>      </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>784</xloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>agrego id rango horas</name>
-    <type>Sequence</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <valuename>idRango</valuename>
-    <use_database>N</use_database>
-    <connection>dbdw2018</connection>
-    <schema/>
-    <seqname>SEQ_</seqname>
-    <use_counter>Y</use_counter>
-    <counter_name/>
-    <start_at>1</start_at>
-    <increment_by>1</increment_by>
-    <max_value>999999999</max_value>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>752</xloc>
-      <yloc>512</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>limpio matutinos</name>
-    <type>ReplaceString</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <in_stream_name>rango_horario</in_stream_name>
-        <out_stream_name/>
-        <use_regex>yes</use_regex>
-        <replace_string>Matutino.*</replace_string>
-        <replace_by_string>Matutino</replace_by_string>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>352</xloc>
-      <yloc>416</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>limpio vespertinos</name>
-    <type>ReplaceString</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <in_stream_name>rango_horario</in_stream_name>
-        <out_stream_name/>
-        <use_regex>yes</use_regex>
-        <replace_string>Vespertino.*</replace_string>
-        <replace_by_string>Vespertino</replace_by_string>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>288</xloc>
-      <yloc>528</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>limpio nocturnos</name>
-    <type>ReplaceString</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <in_stream_name>rango_horario</in_stream_name>
-        <out_stream_name/>
-        <use_regex>yes</use_regex>
-        <replace_string>Nocturno.*</replace_string>
-        <replace_by_string>Nocturno</replace_by_string>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>416</xloc>
-      <yloc>544</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>selecciono datos del contenedor</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>GID</name>
-        <rename/>
-      </field>
-      <field>
-        <name>COD_CIRCUITO</name>
-        <rename/>
-      </field>
-      <field>
-        <name>TURNO_HORARIO</name>
-        <rename/>
-      </field>
-      <field>
-        <name>X</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Y</name>
-        <rename/>
-      </field>
-      <select_unspecified>N</select_unspecified>
-      <remove>
-        <name>TURNO_HORARIO</name>
-      </remove>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>720</xloc>
-      <yloc>96</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
+      </GUI>
+    </step>
+
   <step>
     <name>circuitos csv</name>
     <type>CsvInput</type>
     <description/>
     <distribute>Y</distribute>
-    <custom_distribution/>
     <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
     <filename>C:\grondan\Fing\DW2018\Fuentes\Circuitos_recoleccion.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
     <separator>;</separator>
-    <enclosure>"</enclosure>
+    <enclosure>&quot;</enclosure>
     <header>Y</header>
     <buffer_size>50000</buffer_size>
     <lazy_conversion>Y</lazy_conversion>
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
-    <newline_possible>N</newline_possible>
     <encoding/>
     <fields>
       <field>
@@ -1806,240 +523,738 @@
         <trim_type>none</trim_type>
       </field>
     </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>128</xloc>
       <yloc>16</yloc>
       <draw>Y</draw>
-    </GUI>
-  </step>
+      </GUI>
+    </step>
+
   <step>
-    <name>selecciono vertices del circuito</name>
-    <type>SelectValues</type>
+    <name>divido dias de rango</name>
+    <type>FieldSplitter</type>
     <description/>
     <distribute>N</distribute>
-    <custom_distribution/>
     <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>GID</name>
-        <rename/>
-      </field>
-      <field>
-        <name>COD_CIRCUITO</name>
-        <rename/>
-      </field>
-      <field>
-        <name>MUNICIPIO</name>
-        <rename/>
-      </field>
-      <field>
-        <name>VERTICES</name>
-        <rename/>
-      </field>
-      <select_unspecified>N</select_unspecified>
-      <remove>
-        <name>GID</name>
-      </remove>
-      <remove>
-        <name>MUNICIPIO</name>
-      </remove>
-    </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>531</xloc>
-      <yloc>38</yloc>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+   <splitfield>TURNO_HORARIO</splitfield>
+   <delimiter> CON FERIADOS LABORABLES:</delimiter>
+    <fields>      <field>        <name>dias</name>
+        <id/>
+        <idrem>N</idrem>
+        <type>String</type>
+        <format/>
+        <group/>
+        <decimal/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif/>
+        <ifnull/>
+        <trimtype>none</trimtype>
+      </field>      <field>        <name>rango_horario</name>
+        <id/>
+        <idrem>N</idrem>
+        <type>String</type>
+        <format/>
+        <group/>
+        <decimal/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <nullif/>
+        <ifnull/>
+        <trimtype>none</trimtype>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>208</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
-    </GUI>
-  </step>
+      </GUI>
+    </step>
+
+  <step>
+    <name>elimino id duplicado del circuito</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>COD_CIRCUITO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>VERTICES</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>GID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>COD_CIRCUITO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>X</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Y</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>COD_CIRCUITO_1</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1056</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>elimino rangos repetidos</name>
+    <type>UniqueRowsByHashSet</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <store_values>N</store_values>
+    <fields>      <field>        <name>rango_horario</name>
+        </field>      </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>576</xloc>
+      <yloc>496</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>guardo dimension contResidous</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>dbdw2018</connection>
+    <schema>public</schema>
+    <table>contResiduos</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1152</xloc>
+      <yloc>0</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>guardo dimension turnoHoras</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>dbdw2018</connection>
+    <schema>public</schema>
+    <table>turnoHoras</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1024</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
   <step>
     <name>join de circuitos y contenedor</name>
     <type>MergeJoin</type>
     <description/>
     <distribute>Y</distribute>
-    <custom_distribution/>
     <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <join_type>INNER</join_type>
-    <step1>orden por id circuito</step1>
-    <step2>orden por id circuito 2</step2>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<join_type>INNER</join_type>
+<step1>orden por id circuito</step1>
+<step2>orden por id circuito 2</step2>
     <keys_1>
       <key>COD_CIRCUITO</key>
     </keys_1>
     <keys_2>
       <key>COD_CIRCUITO</key>
     </keys_2>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>928</xloc>
       <yloc>16</yloc>
       <draw>Y</draw>
-    </GUI>
-  </step>
+      </GUI>
+    </step>
+
   <step>
-    <name>orden por id circuito 2</name>
-    <type>SortRows</type>
+    <name>limpio matutinos</name>
+    <type>ReplaceString</type>
     <description/>
     <distribute>Y</distribute>
-    <custom_distribution/>
     <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
     <fields>
       <field>
-        <name>COD_CIRCUITO</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
+        <in_stream_name>rango_horario</in_stream_name>
+        <out_stream_name/>
+        <use_regex>yes</use_regex>
+        <replace_string>Matutino.*</replace_string>
+        <replace_by_string>Matutino</replace_by_string>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
       </field>
     </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>864</xloc>
-      <yloc>128</yloc>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>352</xloc>
+      <yloc>416</yloc>
       <draw>Y</draw>
-    </GUI>
-  </step>
+      </GUI>
+    </step>
+
+  <step>
+    <name>limpio nocturnos</name>
+    <type>ReplaceString</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>rango_horario</in_stream_name>
+        <out_stream_name/>
+        <use_regex>yes</use_regex>
+        <replace_string>Nocturno.*</replace_string>
+        <replace_by_string>Nocturno</replace_by_string>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>416</xloc>
+      <yloc>544</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>limpio vespertinos</name>
+    <type>ReplaceString</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>rango_horario</in_stream_name>
+        <out_stream_name/>
+        <use_regex>yes</use_regex>
+        <replace_string>Vespertino.*</replace_string>
+        <replace_by_string>Vespertino</replace_by_string>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>288</xloc>
+      <yloc>528</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>me quedo con los dias</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>GID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>COD_CIRCUITO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dias</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>rango_horario</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>X</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Y</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dias_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>GID</name>
+      </remove>      <remove>        <name>COD_CIRCUITO</name>
+      </remove>      <remove>        <name>dias</name>
+      </remove>      <remove>        <name>rango_horario</name>
+      </remove>      <remove>        <name>X</name>
+      </remove>      <remove>        <name>Y</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>640</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>me quedo con los rangos</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>GID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>COD_CIRCUITO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dias</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>rango_horario</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>X</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Y</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>GID</name>
+      </remove>      <remove>        <name>COD_CIRCUITO</name>
+      </remove>      <remove>        <name>dias</name>
+      </remove>      <remove>        <name>X</name>
+      </remove>      <remove>        <name>Y</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>464</xloc>
+      <yloc>272</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
   <step>
     <name>orden por id circuito</name>
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
-    <custom_distribution/>
     <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>%%java.io.tmpdir%%</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
     <fields>
       <field>
         <name>COD_CIRCUITO</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
       </field>
     </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>704</xloc>
       <yloc>32</yloc>
       <draw>Y</draw>
-    </GUI>
-  </step>
+      </GUI>
+    </step>
+
   <step>
-    <name>elimino id duplicado del circuito</name>
-    <type>SelectValues</type>
+    <name>orden por id circuito 2</name>
+    <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
-    <custom_distribution/>
     <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>%%java.io.tmpdir%%</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
     <fields>
       <field>
         <name>COD_CIRCUITO</name>
-        <rename/>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
       </field>
-      <field>
-        <name>VERTICES</name>
-        <rename/>
-      </field>
-      <field>
-        <name>GID</name>
-        <rename/>
-      </field>
-      <field>
-        <name>COD_CIRCUITO_1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>X</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Y</name>
-        <rename/>
-      </field>
-      <select_unspecified>N</select_unspecified>
-      <remove>
-        <name>COD_CIRCUITO_1</name>
-      </remove>
     </fields>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1056</xloc>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>864</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ordeno por tipo de dia</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>%%java.io.tmpdir%%</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>nomTipo</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>848</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>quito plural domingo</name>
+    <type>ReplaceString</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>COD_CIRCUITO</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string/>
+        <replace_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>dias</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>DOMINGOS</replace_string>
+        <replace_by_string>DOMINGO</replace_by_string>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>rango_horario</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string/>
+        <replace_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>544</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>quito plural sabado</name>
+    <type>ReplaceString</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>COD_CIRCUITO</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string/>
+        <replace_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>dias</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>SABADOS</replace_string>
+        <replace_by_string>SABADO</replace_by_string>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>rango_horario</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string/>
+        <replace_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>448</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>selecciono datos del contenedor</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>GID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>COD_CIRCUITO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TURNO_HORARIO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>X</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>Y</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>TURNO_HORARIO</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>720</xloc>
       <yloc>96</yloc>
       <draw>Y</draw>
-    </GUI>
-  </step>
+      </GUI>
+    </step>
+
+  <step>
+    <name>selecciono vertices del circuito</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>GID</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>COD_CIRCUITO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>MUNICIPIO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>VERTICES</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>GID</name>
+      </remove>      <remove>        <name>MUNICIPIO</name>
+      </remove>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>531</xloc>
+      <yloc>38</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ESRI Shapefile Reader</name>
+    <type>ShapeFileReader</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <shapefilename>C:\grondan\Fing\DW2018\Fuentes\sig_municipios.shp</shapefilename>
+    <dbffilename>C:\grondan\Fing\DW2018\Fuentes\sig_municipios.dbf</dbffilename>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>102</xloc>
+      <yloc>588</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>dbdw2018</connection>
+    <schema>public</schema>
+    <table>testGeographic</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>398</xloc>
+      <yloc>647</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
   <step_error_handling>
   </step_error_handling>
-  <slave-step-copy-partition-distribution>
-  </slave-step-copy-partition-distribution>
-  <slave_transformation>N</slave_transformation>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
 </transformation>
