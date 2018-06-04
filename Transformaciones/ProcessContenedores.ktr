@@ -78,7 +78,7 @@
     </attributes>
   </connection>
   <order>
-  <hop> <from>Read Contenedores Data</from><to>divido dias de rango</to><enabled>Y</enabled> </hop>  <hop> <from>divido dias de rango</from><to>borro Y</to><enabled>Y</enabled> </hop>  <hop> <from>me quedo con los dias</from><to>borro dias duplicados</to><enabled>Y</enabled> </hop>  <hop> <from>borro dias duplicados</from><to>agrego id de dias</to><enabled>Y</enabled> </hop>  <hop> <from>borro Y</from><to>borro comas</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id de dias</from><to>agrego tipo dia</to><enabled>Y</enabled> </hop>  <hop> <from>borro comas</from><to>quito plural sabado</to><enabled>Y</enabled> </hop>  <hop> <from>quito plural sabado</from><to>quito plural domingo</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id por tipo de dia</from><to>Guardo dimension turnoDias</to><enabled>Y</enabled> </hop>  <hop> <from>elimino rangos repetidos</from><to>agrego id rango horas</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id rango horas</from><to>guardo dimension turnoHoras</to><enabled>Y</enabled> </hop>  <hop> <from>me quedo con los rangos</from><to>limpio matutinos</to><enabled>Y</enabled> </hop>  <hop> <from>limpio matutinos</from><to>limpio vespertinos</to><enabled>Y</enabled> </hop>  <hop> <from>limpio vespertinos</from><to>limpio nocturnos</to><enabled>Y</enabled> </hop>  <hop> <from>limpio nocturnos</from><to>elimino rangos repetidos</to><enabled>Y</enabled> </hop>  <hop> <from>circuitos csv</from><to>selecciono vertices del circuito</to><enabled>Y</enabled> </hop>  <hop> <from>selecciono datos del contenedor</from><to>orden por id circuito 2</to><enabled>Y</enabled> </hop>  <hop> <from>orden por id circuito</from><to>join de circuitos y contenedor</to><enabled>Y</enabled> </hop>  <hop> <from>orden por id circuito 2</from><to>join de circuitos y contenedor</to><enabled>Y</enabled> </hop>  <hop> <from>join de circuitos y contenedor</from><to>elimino id duplicado del circuito</to><enabled>Y</enabled> </hop>  <hop> <from>elimino id duplicado del circuito</from><to>guardo dimension contResidous</to><enabled>Y</enabled> </hop>  <hop> <from>divido dias de rango</from><to>me quedo con los rangos</to><enabled>Y</enabled> </hop>  <hop> <from>Encuesta Hogares</from><to>Limpio columnas</to><enabled>Y</enabled> </hop>  <hop> <from>elimino columna departamento</from><to>agrego id hogares</to><enabled>Y</enabled> </hop>  <hop> <from>clasificacion tipo vivienda</from><to>agrego id tipo vivienda</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id Estrato Social</from><to>agrego id sanitaria</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id tipo vivienda</from><to>agrego id Estrato Social</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id sanitaria</from><to>clasificacion nomAsentamiento</to><enabled>Y</enabled> </hop>  <hop> <from>clasificacion nomAsentamiento</from><to>clasificacion estrato social</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id hogares</from><to>agrego id asentamiento</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id asentamiento</from><to>clasificacion tipo vivienda</to><enabled>Y</enabled> </hop>  <hop> <from>clasificacion estrato social</from><to>clasificacion sanitaria</to><enabled>Y</enabled> </hop>  <hop> <from>Locales</from><to>elimino columna departamento 3</to><enabled>Y</enabled> </hop>  <hop> <from>elimino columna departamento 3</from><to>Filter rows 2</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 2</from><to>agrego id locales</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id locales</from><to>clasifico tipo empresa</to><enabled>Y</enabled> </hop>  <hop> <from>clasifico tipo empresa</from><to>agrego id tipo empresa</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id tipo empresa</from><to>agrego id habilitado</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id habilitado</from><to>guardo dimension Empresas</to><enabled>Y</enabled> </hop>  <hop> <from>Limpio columnas</from><to>obtengo hogares de montevideo</to><enabled>Y</enabled> </hop>  <hop> <from>obtengo hogares de montevideo</from><to>elimino columna departamento</to><enabled>Y</enabled> </hop>  <hop> <from>obtengo hogares de montevideo</from><to>Dummy (do nothing)</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 2</from><to>Dummy (do nothing) 2</to><enabled>Y</enabled> </hop>  <hop> <from>Join Rows (cartesian product)</from><to>Filter rows</to><enabled>Y</enabled> </hop>  <hop> <from>ccz</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows</from><to>Dummy (do nothing) 3</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 3</from><to>Dummy (do nothing) 5</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows</from><to>Filter rows 3</to><enabled>Y</enabled> </hop>  <hop> <from>municipios</from><to>obtengo forma y nombre de municipios</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 3</from><to>Join Rows (cartesian product) 2</to><enabled>Y</enabled> </hop>  <hop> <from>Join Rows (cartesian product) 2</from><to>Filter rows 3 2</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 3 2</from><to>Dummy (do nothing) 5 2</to><enabled>Y</enabled> </hop>  <hop> <from>obtengo forma y nombre de municipios</from><to>agrego id municipios</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id municipios</from><to>Join Rows (cartesian product) 2</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 3 2</from><to>me quedo con los campos finales de la tabla</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>agrego id ccz</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id ccz</from><to>Join Rows (cartesian product)</to><enabled>Y</enabled> </hop>  <hop> <from>barrios</from><to>agrego id barrio</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id barrio</from><to>Join Rows (cartesian product)</to><enabled>Y</enabled> </hop>  <hop> <from>me quedo con los campos finales de la tabla</from><to>guardo dimension ubicGeografica</to><enabled>Y</enabled> </hop>  <hop> <from>selecciono vertices del circuito</from><to>agrego id circuito interno</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id circuito interno</from><to>orden por id circuito</to><enabled>Y</enabled> </hop>  <hop> <from>Read Contenedores Data</from><to>agrego id contenedor interno</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id contenedor interno</from><to>selecciono datos del contenedor</to><enabled>Y</enabled> </hop>  <hop> <from>clasificacion sanitaria</from><to>guardo dimension hogares</to><enabled>Y</enabled> </hop>  <hop> <from>agrego tipo dia</from><to>agrego id por tipo de dia</to><enabled>Y</enabled> </hop>  <hop> <from>quito plural domingo</from><to>separo los dias</to><enabled>Y</enabled> </hop>  <hop> <from>separo los dias</from><to>me quedo con los dias</to><enabled>Y</enabled> </hop>  </order>
+  <hop> <from>Read Contenedores Data</from><to>divido dias de rango</to><enabled>Y</enabled> </hop>  <hop> <from>divido dias de rango</from><to>borro Y</to><enabled>Y</enabled> </hop>  <hop> <from>me quedo con los dias</from><to>borro dias duplicados</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id de dias</from><to>agrego tipo dia</to><enabled>Y</enabled> </hop>  <hop> <from>quito plural sabado</from><to>quito plural domingo</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id por tipo de dia</from><to>Guardo dimension turnoDias</to><enabled>Y</enabled> </hop>  <hop> <from>elimino rangos repetidos</from><to>agrego id rango horas</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id rango horas</from><to>guardo dimension turnoHoras</to><enabled>Y</enabled> </hop>  <hop> <from>me quedo con los rangos</from><to>limpio matutinos</to><enabled>Y</enabled> </hop>  <hop> <from>limpio matutinos</from><to>limpio vespertinos</to><enabled>Y</enabled> </hop>  <hop> <from>limpio vespertinos</from><to>limpio nocturnos</to><enabled>Y</enabled> </hop>  <hop> <from>limpio nocturnos</from><to>elimino rangos repetidos</to><enabled>Y</enabled> </hop>  <hop> <from>circuitos csv</from><to>selecciono vertices del circuito</to><enabled>Y</enabled> </hop>  <hop> <from>selecciono datos del contenedor</from><to>orden por id circuito 2</to><enabled>Y</enabled> </hop>  <hop> <from>orden por id circuito</from><to>join de circuitos y contenedor</to><enabled>Y</enabled> </hop>  <hop> <from>orden por id circuito 2</from><to>join de circuitos y contenedor</to><enabled>Y</enabled> </hop>  <hop> <from>join de circuitos y contenedor</from><to>elimino id duplicado del circuito</to><enabled>Y</enabled> </hop>  <hop> <from>elimino id duplicado del circuito</from><to>guardo dimension contResidous</to><enabled>Y</enabled> </hop>  <hop> <from>divido dias de rango</from><to>me quedo con los rangos</to><enabled>Y</enabled> </hop>  <hop> <from>Encuesta Hogares</from><to>Limpio columnas</to><enabled>Y</enabled> </hop>  <hop> <from>elimino columna departamento</from><to>agrego id hogares</to><enabled>Y</enabled> </hop>  <hop> <from>clasificacion tipo vivienda</from><to>agrego id tipo vivienda</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id Estrato Social</from><to>agrego id sanitaria</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id tipo vivienda</from><to>agrego id Estrato Social</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id sanitaria</from><to>clasificacion nomAsentamiento</to><enabled>Y</enabled> </hop>  <hop> <from>clasificacion nomAsentamiento</from><to>clasificacion estrato social</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id hogares</from><to>agrego id asentamiento</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id asentamiento</from><to>clasificacion tipo vivienda</to><enabled>Y</enabled> </hop>  <hop> <from>clasificacion estrato social</from><to>clasificacion sanitaria</to><enabled>Y</enabled> </hop>  <hop> <from>Locales</from><to>elimino columna departamento 3</to><enabled>Y</enabled> </hop>  <hop> <from>elimino columna departamento 3</from><to>Filter rows 2</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 2</from><to>agrego id locales</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id locales</from><to>clasifico tipo empresa</to><enabled>Y</enabled> </hop>  <hop> <from>clasifico tipo empresa</from><to>agrego id tipo empresa</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id tipo empresa</from><to>agrego id habilitado</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id habilitado</from><to>guardo dimension Empresas</to><enabled>Y</enabled> </hop>  <hop> <from>Limpio columnas</from><to>obtengo hogares de montevideo</to><enabled>Y</enabled> </hop>  <hop> <from>obtengo hogares de montevideo</from><to>elimino columna departamento</to><enabled>Y</enabled> </hop>  <hop> <from>obtengo hogares de montevideo</from><to>Dummy (do nothing)</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 2</from><to>Dummy (do nothing) 2</to><enabled>Y</enabled> </hop>  <hop> <from>Join Rows (cartesian product)</from><to>Filter rows</to><enabled>Y</enabled> </hop>  <hop> <from>ccz</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows</from><to>Dummy (do nothing) 3</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 3</from><to>Dummy (do nothing) 5</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows</from><to>Filter rows 3</to><enabled>Y</enabled> </hop>  <hop> <from>municipios</from><to>obtengo forma y nombre de municipios</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 3</from><to>Join Rows (cartesian product) 2</to><enabled>Y</enabled> </hop>  <hop> <from>Join Rows (cartesian product) 2</from><to>Filter rows 3 2</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 3 2</from><to>Dummy (do nothing) 5 2</to><enabled>Y</enabled> </hop>  <hop> <from>obtengo forma y nombre de municipios</from><to>agrego id municipios</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id municipios</from><to>Join Rows (cartesian product) 2</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 3 2</from><to>me quedo con los campos finales de la tabla</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>agrego id ccz</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id ccz</from><to>Join Rows (cartesian product)</to><enabled>Y</enabled> </hop>  <hop> <from>barrios</from><to>agrego id barrio</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id barrio</from><to>Join Rows (cartesian product)</to><enabled>Y</enabled> </hop>  <hop> <from>me quedo con los campos finales de la tabla</from><to>guardo dimension ubicGeografica</to><enabled>Y</enabled> </hop>  <hop> <from>selecciono vertices del circuito</from><to>agrego id circuito interno</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id circuito interno</from><to>orden por id circuito</to><enabled>Y</enabled> </hop>  <hop> <from>Read Contenedores Data</from><to>agrego id contenedor interno</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id contenedor interno</from><to>selecciono datos del contenedor</to><enabled>Y</enabled> </hop>  <hop> <from>clasificacion sanitaria</from><to>guardo dimension hogares</to><enabled>Y</enabled> </hop>  <hop> <from>agrego tipo dia</from><to>agrego id por tipo de dia</to><enabled>Y</enabled> </hop>  <hop> <from>quito plural domingo</from><to>separo los dias</to><enabled>Y</enabled> </hop>  <hop> <from>separo los dias</from><to>me quedo con los dias</to><enabled>Y</enabled> </hop>  <hop> <from>borro Y</from><to>borro comas</to><enabled>Y</enabled> </hop>  <hop> <from>borro comas</from><to>quito plural sabado</to><enabled>Y</enabled> </hop>  <hop> <from>borro dias duplicados</from><to>elimino null</to><enabled>Y</enabled> </hop>  <hop> <from>elimino null</from><to>agrego id de dias</to><enabled>Y</enabled> </hop>  <hop> <from>elimino null</from><to>Dummy (do nothing) 4</to><enabled>Y</enabled> </hop>  </order>
   <step>
     <name>Dummy (do nothing)</name>
     <type>Dummy</type>
@@ -1343,8 +1343,8 @@
     </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>368</xloc>
-      <yloc>144</yloc>
+      <xloc>366</xloc>
+      <yloc>155</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1353,7 +1353,7 @@
     <name>borro dias duplicados</name>
     <type>UniqueRowsByHashSet</type>
     <description/>
-    <distribute>Y</distribute>
+    <distribute>N</distribute>
     <copies>1</copies>
          <partitioning>
            <method>none</method>
@@ -1363,8 +1363,8 @@
     <fields>      <field>        <name>nomDia</name>
         </field>      </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>784</xloc>
-      <yloc>224</yloc>
+      <xloc>777</xloc>
+      <yloc>195</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2591,33 +2591,6 @@
     </step>
 
   <step>
-    <name>obtengo forma y nombre de municipios 2</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <fields>      <field>        <name>the_geom</name>
-        <rename>the_geom_municipio</rename>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>MUNICIPIO</name>
-        <rename>nomMun</rename>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>        <select_unspecified>N</select_unspecified>
-    </fields>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>773</xloc>
-      <yloc>145</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
     <name>me quedo con los campos finales de la tabla</name>
     <type>SelectValues</type>
     <description/>
@@ -2783,7 +2756,7 @@
            <schema_name/>
            </partitioning>
    <splitfield>dias</splitfield>
-   <delimiter>\s+</delimiter>
+   <delimiter>&quot; &quot;</delimiter>
    <newfield>dias_1</newfield>
    <rownum>N</rownum>
    <rownum_field/>
@@ -2792,6 +2765,80 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>552</xloc>
       <yloc>208</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>obtengo hogares de montevideo 2</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>elimino columna departamento</send_true_to>
+<send_false_to>Dummy (do nothing)</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>departamento</leftvalue>
+ <function>=</function>
+ <rightvalue/>
+ <value><name>constant</name><type>String</type><text>1</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>876</xloc>
+      <yloc>91</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>elimino null</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>agrego id de dias</send_true_to>
+<send_false_to>Dummy (do nothing) 4</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>nomDia</leftvalue>
+ <function>IS NOT NULL</function>
+ <rightvalue/>
+ <value><name>constant</name><type>Number</type><text>1.0</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask>####0.0#########;-####0.0#########</mask></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>887</xloc>
+      <yloc>222</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy (do nothing) 4</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>952</xloc>
+      <yloc>270</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
