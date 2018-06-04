@@ -78,7 +78,191 @@
     </attributes>
   </connection>
   <order>
-  <hop> <from>Read Contenedores Data</from><to>divido dias de rango</to><enabled>Y</enabled> </hop>  <hop> <from>divido dias de rango</from><to>borro Y</to><enabled>Y</enabled> </hop>  <hop> <from>Split field to rows</from><to>me quedo con los dias</to><enabled>Y</enabled> </hop>  <hop> <from>me quedo con los dias</from><to>borro dias duplicados</to><enabled>Y</enabled> </hop>  <hop> <from>borro dias duplicados</from><to>agrego id de dias</to><enabled>Y</enabled> </hop>  <hop> <from>borro Y</from><to>borro comas</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id de dias</from><to>agrego tipo dia</to><enabled>Y</enabled> </hop>  <hop> <from>borro comas</from><to>quito plural sabado</to><enabled>Y</enabled> </hop>  <hop> <from>quito plural sabado</from><to>quito plural domingo</to><enabled>Y</enabled> </hop>  <hop> <from>quito plural domingo</from><to>Split field to rows</to><enabled>Y</enabled> </hop>  <hop> <from>agrego tipo dia</from><to>ordeno por tipo de dia</to><enabled>Y</enabled> </hop>  <hop> <from>ordeno por tipo de dia</from><to>agrego id por tipo de dia</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id por tipo de dia</from><to>Guardo dimension turnoDias</to><enabled>Y</enabled> </hop>  <hop> <from>elimino rangos repetidos</from><to>agrego id rango horas</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id rango horas</from><to>guardo dimension turnoHoras</to><enabled>Y</enabled> </hop>  <hop> <from>me quedo con los rangos</from><to>limpio matutinos</to><enabled>Y</enabled> </hop>  <hop> <from>limpio matutinos</from><to>limpio vespertinos</to><enabled>Y</enabled> </hop>  <hop> <from>limpio vespertinos</from><to>limpio nocturnos</to><enabled>Y</enabled> </hop>  <hop> <from>limpio nocturnos</from><to>elimino rangos repetidos</to><enabled>Y</enabled> </hop>  <hop> <from>circuitos csv</from><to>selecciono vertices del circuito</to><enabled>Y</enabled> </hop>  <hop> <from>selecciono vertices del circuito</from><to>orden por id circuito</to><enabled>Y</enabled> </hop>  <hop> <from>selecciono datos del contenedor</from><to>orden por id circuito 2</to><enabled>Y</enabled> </hop>  <hop> <from>orden por id circuito</from><to>join de circuitos y contenedor</to><enabled>Y</enabled> </hop>  <hop> <from>orden por id circuito 2</from><to>join de circuitos y contenedor</to><enabled>Y</enabled> </hop>  <hop> <from>join de circuitos y contenedor</from><to>elimino id duplicado del circuito</to><enabled>Y</enabled> </hop>  <hop> <from>elimino id duplicado del circuito</from><to>guardo dimension contResidous</to><enabled>Y</enabled> </hop>  <hop> <from>Read Contenedores Data</from><to>selecciono datos del contenedor</to><enabled>Y</enabled> </hop>  <hop> <from>divido dias de rango</from><to>me quedo con los rangos</to><enabled>Y</enabled> </hop>  <hop> <from>ESRI Shapefile Reader</from><to>Table output</to><enabled>Y</enabled> </hop>  </order>
+  <hop> <from>Read Contenedores Data</from><to>divido dias de rango</to><enabled>Y</enabled> </hop>  <hop> <from>divido dias de rango</from><to>borro Y</to><enabled>Y</enabled> </hop>  <hop> <from>me quedo con los dias</from><to>borro dias duplicados</to><enabled>Y</enabled> </hop>  <hop> <from>borro dias duplicados</from><to>agrego id de dias</to><enabled>Y</enabled> </hop>  <hop> <from>borro Y</from><to>borro comas</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id de dias</from><to>agrego tipo dia</to><enabled>Y</enabled> </hop>  <hop> <from>borro comas</from><to>quito plural sabado</to><enabled>Y</enabled> </hop>  <hop> <from>quito plural sabado</from><to>quito plural domingo</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id por tipo de dia</from><to>Guardo dimension turnoDias</to><enabled>Y</enabled> </hop>  <hop> <from>elimino rangos repetidos</from><to>agrego id rango horas</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id rango horas</from><to>guardo dimension turnoHoras</to><enabled>Y</enabled> </hop>  <hop> <from>me quedo con los rangos</from><to>limpio matutinos</to><enabled>Y</enabled> </hop>  <hop> <from>limpio matutinos</from><to>limpio vespertinos</to><enabled>Y</enabled> </hop>  <hop> <from>limpio vespertinos</from><to>limpio nocturnos</to><enabled>Y</enabled> </hop>  <hop> <from>limpio nocturnos</from><to>elimino rangos repetidos</to><enabled>Y</enabled> </hop>  <hop> <from>circuitos csv</from><to>selecciono vertices del circuito</to><enabled>Y</enabled> </hop>  <hop> <from>selecciono datos del contenedor</from><to>orden por id circuito 2</to><enabled>Y</enabled> </hop>  <hop> <from>orden por id circuito</from><to>join de circuitos y contenedor</to><enabled>Y</enabled> </hop>  <hop> <from>orden por id circuito 2</from><to>join de circuitos y contenedor</to><enabled>Y</enabled> </hop>  <hop> <from>join de circuitos y contenedor</from><to>elimino id duplicado del circuito</to><enabled>Y</enabled> </hop>  <hop> <from>elimino id duplicado del circuito</from><to>guardo dimension contResidous</to><enabled>Y</enabled> </hop>  <hop> <from>divido dias de rango</from><to>me quedo con los rangos</to><enabled>Y</enabled> </hop>  <hop> <from>Encuesta Hogares</from><to>Limpio columnas</to><enabled>Y</enabled> </hop>  <hop> <from>elimino columna departamento</from><to>agrego id hogares</to><enabled>Y</enabled> </hop>  <hop> <from>clasificacion tipo vivienda</from><to>agrego id tipo vivienda</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id Estrato Social</from><to>agrego id sanitaria</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id tipo vivienda</from><to>agrego id Estrato Social</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id sanitaria</from><to>clasificacion nomAsentamiento</to><enabled>Y</enabled> </hop>  <hop> <from>clasificacion nomAsentamiento</from><to>clasificacion estrato social</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id hogares</from><to>agrego id asentamiento</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id asentamiento</from><to>clasificacion tipo vivienda</to><enabled>Y</enabled> </hop>  <hop> <from>clasificacion estrato social</from><to>clasificacion sanitaria</to><enabled>Y</enabled> </hop>  <hop> <from>Locales</from><to>elimino columna departamento 3</to><enabled>Y</enabled> </hop>  <hop> <from>elimino columna departamento 3</from><to>Filter rows 2</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 2</from><to>agrego id locales</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id locales</from><to>clasifico tipo empresa</to><enabled>Y</enabled> </hop>  <hop> <from>clasifico tipo empresa</from><to>agrego id tipo empresa</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id tipo empresa</from><to>agrego id habilitado</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id habilitado</from><to>guardo dimension Empresas</to><enabled>Y</enabled> </hop>  <hop> <from>Limpio columnas</from><to>obtengo hogares de montevideo</to><enabled>Y</enabled> </hop>  <hop> <from>obtengo hogares de montevideo</from><to>elimino columna departamento</to><enabled>Y</enabled> </hop>  <hop> <from>obtengo hogares de montevideo</from><to>Dummy (do nothing)</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 2</from><to>Dummy (do nothing) 2</to><enabled>Y</enabled> </hop>  <hop> <from>Join Rows (cartesian product)</from><to>Filter rows</to><enabled>Y</enabled> </hop>  <hop> <from>ccz</from><to>Select values</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows</from><to>Dummy (do nothing) 3</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 3</from><to>Dummy (do nothing) 5</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows</from><to>Filter rows 3</to><enabled>Y</enabled> </hop>  <hop> <from>municipios</from><to>obtengo forma y nombre de municipios</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 3</from><to>Join Rows (cartesian product) 2</to><enabled>Y</enabled> </hop>  <hop> <from>Join Rows (cartesian product) 2</from><to>Filter rows 3 2</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 3 2</from><to>Dummy (do nothing) 5 2</to><enabled>Y</enabled> </hop>  <hop> <from>obtengo forma y nombre de municipios</from><to>agrego id municipios</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id municipios</from><to>Join Rows (cartesian product) 2</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows 3 2</from><to>me quedo con los campos finales de la tabla</to><enabled>Y</enabled> </hop>  <hop> <from>Select values</from><to>agrego id ccz</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id ccz</from><to>Join Rows (cartesian product)</to><enabled>Y</enabled> </hop>  <hop> <from>barrios</from><to>agrego id barrio</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id barrio</from><to>Join Rows (cartesian product)</to><enabled>Y</enabled> </hop>  <hop> <from>me quedo con los campos finales de la tabla</from><to>guardo dimension ubicGeografica</to><enabled>Y</enabled> </hop>  <hop> <from>selecciono vertices del circuito</from><to>agrego id circuito interno</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id circuito interno</from><to>orden por id circuito</to><enabled>Y</enabled> </hop>  <hop> <from>Read Contenedores Data</from><to>agrego id contenedor interno</to><enabled>Y</enabled> </hop>  <hop> <from>agrego id contenedor interno</from><to>selecciono datos del contenedor</to><enabled>Y</enabled> </hop>  <hop> <from>clasificacion sanitaria</from><to>guardo dimension hogares</to><enabled>Y</enabled> </hop>  <hop> <from>agrego tipo dia</from><to>agrego id por tipo de dia</to><enabled>Y</enabled> </hop>  <hop> <from>quito plural domingo</from><to>separo los dias</to><enabled>Y</enabled> </hop>  <hop> <from>separo los dias</from><to>me quedo con los dias</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>Dummy (do nothing)</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>374</xloc>
+      <yloc>865</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy (do nothing) 2</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>247</xloc>
+      <yloc>1004</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy (do nothing) 3</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>321</xloc>
+      <yloc>1205</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy (do nothing) 5</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>481</xloc>
+      <yloc>1086</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Encuesta Hogares</name>
+    <type>XBaseInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <file_dbf>C:\grondan\Fing\Fuentes\H_2017_Terceros.dbf</file_dbf>
+    <limit>0</limit>
+    <add_rownr>N</add_rownr>
+    <field_rownr/>
+    <include>N</include>
+    <include_field/>
+    <charset_name/>
+    <accept_filenames>N</accept_filenames>
+    <accept_field/>
+    <accept_stepname/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>32</xloc>
+      <yloc>736</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Filter rows 3</send_true_to>
+<send_false_to>Dummy (do nothing) 3</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>the_geom</leftvalue>
+ <function>GIS_INTERSECTS</function>
+ <rightvalue>the_geomCCZ</rightvalue>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>285</xloc>
+      <yloc>1087</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows 2</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>agrego id locales</send_true_to>
+<send_false_to>Dummy (do nothing) 2</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>CCZ</leftvalue>
+ <function>IS NOT NULL</function>
+ <rightvalue/>
+ <value><name>constant</name><type>Number</type><text>1.0</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask>####0.0#########;-####0.0#########</mask></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>311</xloc>
+      <yloc>919</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows 3</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Join Rows (cartesian product) 2</send_true_to>
+<send_false_to>Dummy (do nothing) 5</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>the_geomCCZ</leftvalue>
+ <function>IS NOT NULL</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>366</xloc>
+      <yloc>1076</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
   <step>
     <name>Guardo dimension turnoDias</name>
     <type>TableOutput</type>
@@ -117,6 +301,399 @@
     </step>
 
   <step>
+    <name>Join Rows (cartesian product)</name>
+    <type>JoinRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>%%java.io.tmpdir%%</directory>
+      <prefix>out</prefix>
+      <cache_size>500</cache_size>
+      <main/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue/>
+ <function>=</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>186</xloc>
+      <yloc>1113</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Limpio columnas</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>d8_4</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DPTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>c1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ESTRED13</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>d13</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <meta>        <name>D8_4</name>
+        <rename>nomAsentamiento</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>      <meta>        <name>DPTO</name>
+        <rename>departamento</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>      <meta>        <name>c1</name>
+        <rename>tipoVivienda</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>      <meta>        <name>ESTRED13</name>
+        <rename>nomEstrato</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>      <meta>        <name>d13</name>
+        <rename>nomSanitaria</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>192</xloc>
+      <yloc>736</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Locales</name>
+    <type>CsvInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <filename>C:\grondan\Fing\Fuentes\datos_locales_real.csv</filename>
+    <filename_field/>
+    <rownum_field/>
+    <include_filename>N</include_filename>
+    <separator>;</separator>
+    <enclosure>&quot;</enclosure>
+    <header>Y</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <encoding>UTF-8</encoding>
+    <fields>
+      <field>
+        <name>NRO_DOCUMENTO</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>EMPRESA</name>
+        <type>String</type>
+        <format/>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>63</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>FINGRESO</name>
+        <type>Date</type>
+        <format>yyyy&#47;MM&#47;dd HH:mm:ss.SSS</format>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>RUBRO</name>
+        <type>String</type>
+        <format/>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>8</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>NRO_HAB</name>
+        <type>Integer</type>
+        <format> #</format>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>RALOCA_ID</name>
+        <type>Integer</type>
+        <format> #</format>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>DIR_LOCAL</name>
+        <type>String</type>
+        <format/>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>53</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>CCZ</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>NU$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>GIROS</name>
+        <type>String</type>
+        <format/>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>236</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ESTADO_LOCAL</name>
+        <type>String</type>
+        <format/>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>11</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>FDESDE_HAB</name>
+        <type>Date</type>
+        <format>dd&#47;MM&#47;yyyy</format>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>FHASTA_HAB</name>
+        <type>Date</type>
+        <format>dd&#47;MM&#47;yyyy</format>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>NOMBRE_COMERCIAL</name>
+        <type>String</type>
+        <format/>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>20</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>OBSERVACIONES</name>
+        <type>String</type>
+        <format/>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>49</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>COMPLEJO</name>
+        <type>String</type>
+        <format/>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>16</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>VIA_VIA</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>NU$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>NOM_VIA</name>
+        <type>String</type>
+        <format/>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>36</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>NRO_PUERTA</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>NU$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>LETRA</name>
+        <type>String</type>
+        <format/>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>3</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>APTO</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>PLANTA</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>BLOQUE</name>
+        <type>Boolean</type>
+        <format/>
+        <currency>NU$</currency>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>96</xloc>
+      <yloc>912</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>Read Contenedores Data</name>
     <type>CsvInput</type>
     <description/>
@@ -137,7 +714,7 @@
     <lazy_conversion>Y</lazy_conversion>
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
-    <encoding/>
+    <encoding>UTF-8</encoding>
     <fields>
       <field>
         <name>GID</name>
@@ -204,8 +781,80 @@
     </step>
 
   <step>
-    <name>Split field to rows</name>
-    <type>SplitFieldToRows3</type>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>the_geom</name>
+        <rename>the_geomCCZ</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>AREA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>PERIMETER</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CCZ</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>183</xloc>
+      <yloc>1229</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>guardo dimension ubicGeografica</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>dbdw2018</connection>
+    <schema>public</schema>
+    <table>ubicGeografica</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>889</xloc>
+      <yloc>1184</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>agrego id Estrato Social</name>
+    <type>ValueMapper</type>
     <description/>
     <distribute>N</distribute>
     <copies>1</copies>
@@ -213,16 +862,66 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-   <splitfield>dias</splitfield>
-   <delimiter>\s+</delimiter>
-   <newfield>dias</newfield>
-   <rownum>N</rownum>
-   <rownum_field/>
-   <resetrownumber>Y</resetrownumber>
+    <field_to_use>nomEstrato</field_to_use>
+    <target_field>idEstrato</target_field>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>1</source_value>
+        <target_value>1</target_value>
+      </field>
+      <field>
+        <source_value>2</source_value>
+        <target_value>2</target_value>
+      </field>
+      <field>
+        <source_value>3</source_value>
+        <target_value>3</target_value>
+      </field>
+      <field>
+        <source_value>4</source_value>
+        <target_value>4</target_value>
+      </field>
+      <field>
+        <source_value>5</source_value>
+        <target_value>5</target_value>
+      </field>
+    </fields>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>640</xloc>
-      <yloc>160</yloc>
+      <xloc>1088</xloc>
+      <yloc>784</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>agrego id asentamiento</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <field_to_use>nomAsentamiento</field_to_use>
+    <target_field>idAsentamiento</target_field>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>1</source_value>
+        <target_value>1</target_value>
+      </field>
+      <field>
+        <source_value>2</source_value>
+        <target_value>2</target_value>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>688</xloc>
+      <yloc>787</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -251,6 +950,93 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>848</xloc>
       <yloc>304</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>agrego id habilitado</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <field_to_use>nomHabilitado</field_to_use>
+    <target_field>idHabilitado</target_field>
+    <non_match_default>2</non_match_default>
+    <fields>
+      <field>
+        <source_value>Habilitado</source_value>
+        <target_value>1</target_value>
+      </field>
+      <field>
+        <source_value>Vencido</source_value>
+        <target_value>3</target_value>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>688</xloc>
+      <yloc>928</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>agrego id hogares</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <valuename>idHogar</valuename>
+      <use_database>N</use_database>
+      <connection>dbdw2018</connection>
+      <schema/>
+      <seqname>SEQ_</seqname>
+      <use_counter>Y</use_counter>
+      <counter_name/>
+      <start_at>1</start_at>
+      <increment_by>1</increment_by>
+      <max_value>999999999</max_value>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>592</xloc>
+      <yloc>816</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>agrego id locales</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <valuename>idLocal</valuename>
+      <use_database>N</use_database>
+      <connection>dbdw2018</connection>
+      <schema/>
+      <seqname>SEQ_</seqname>
+      <use_counter>Y</use_counter>
+      <counter_name/>
+      <start_at>1</start_at>
+      <increment_by>1</increment_by>
+      <max_value>999999999</max_value>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>374</xloc>
+      <yloc>998</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -311,6 +1097,107 @@
     </step>
 
   <step>
+    <name>agrego id sanitaria</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <field_to_use>nomSanitaria</field_to_use>
+    <target_field>idSanitaria</target_field>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>1</source_value>
+        <target_value>1</target_value>
+      </field>
+      <field>
+        <source_value>2</source_value>
+        <target_value>1</target_value>
+      </field>
+      <field>
+        <source_value>3</source_value>
+        <target_value>2</target_value>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1200</xloc>
+      <yloc>800</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>agrego id tipo empresa</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <field_to_use>nomTipoEmp</field_to_use>
+    <target_field>idTipoEmp</target_field>
+    <non_match_default>3</non_match_default>
+    <fields>
+      <field>
+        <source_value>Expendedores</source_value>
+        <target_value>1</target_value>
+      </field>
+      <field>
+        <source_value>Elaboradores</source_value>
+        <target_value>2</target_value>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>596</xloc>
+      <yloc>976</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>agrego id tipo vivienda</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <field_to_use>tipoVivienda</field_to_use>
+    <target_field>idTipoVivienda</target_field>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>Casa</source_value>
+        <target_value>1</target_value>
+      </field>
+      <field>
+        <source_value>Apartamento</source_value>
+        <target_value>2</target_value>
+      </field>
+      <field>
+        <source_value>Otros</source_value>
+        <target_value>3</target_value>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>960</xloc>
+      <yloc>800</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>agrego tipo dia</name>
     <type>ValueMapper</type>
     <description/>
@@ -320,7 +1207,7 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <field_to_use>dias_1</field_to_use>
+    <field_to_use>nomDia</field_to_use>
     <target_field>nomTipo</target_field>
     <non_match_default>entreSemana</non_match_default>
     <fields>
@@ -337,6 +1224,33 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>736</xloc>
       <yloc>368</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>barrios</name>
+    <type>GISFileInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <filename>C:\grondan\Fing\Fuentes\MapasVectoriales\ine_barrios_mvd_nbi85.shp</filename>
+    <isfilenameinfield>N</isfilenameinfield>
+    <filenamefield/>
+    <limit>0</limit>
+    <add_rownr>N</add_rownr>
+    <field_rownr/>
+    <gis_file_charset>UTF-8</gis_file_charset>
+    <passing_through_fields>N</passing_through_fields>
+    <accept_stepname/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>29</xloc>
+      <yloc>1065</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -446,11 +1360,38 @@
            <schema_name/>
            </partitioning>
       <store_values>N</store_values>
-    <fields>      <field>        <name>dias_1</name>
+    <fields>      <field>        <name>nomDia</name>
         </field>      </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>784</xloc>
       <yloc>224</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ccz</name>
+    <type>GISFileInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <filename>C:\grondan\Fing\Fuentes\MapasVectoriales\ine_ccz_mvd.shp</filename>
+    <isfilenameinfield>N</isfilenameinfield>
+    <filenamefield/>
+    <limit>0</limit>
+    <add_rownr>N</add_rownr>
+    <field_rownr/>
+    <gis_file_charset>UTF-8</gis_file_charset>
+    <passing_through_fields>N</passing_through_fields>
+    <accept_stepname/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>53</xloc>
+      <yloc>1225</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -476,7 +1417,7 @@
     <lazy_conversion>Y</lazy_conversion>
     <add_filename_result>N</add_filename_result>
     <parallel>N</parallel>
-    <encoding/>
+    <encoding>UTF-8</encoding>
     <fields>
       <field>
         <name>GID</name>
@@ -532,6 +1473,185 @@
     </step>
 
   <step>
+    <name>clasificacion estrato social</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <field_to_use>nomEstrato</field_to_use>
+    <target_field/>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>1</source_value>
+        <target_value>Bajo</target_value>
+      </field>
+      <field>
+        <source_value>2</source_value>
+        <target_value>Medio Bajo</target_value>
+      </field>
+      <field>
+        <source_value>3</source_value>
+        <target_value>Medio</target_value>
+      </field>
+      <field>
+        <source_value>4</source_value>
+        <target_value>Medio Alto</target_value>
+      </field>
+      <field>
+        <source_value>5</source_value>
+        <target_value>Alto</target_value>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1327</xloc>
+      <yloc>869</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>clasificacion nomAsentamiento</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <field_to_use>nomAsentamiento</field_to_use>
+    <target_field/>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>1</source_value>
+        <target_value>SI</target_value>
+      </field>
+      <field>
+        <source_value>2</source_value>
+        <target_value>NO</target_value>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1296</xloc>
+      <yloc>784</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>clasificacion sanitaria</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <field_to_use>nomSanitaria</field_to_use>
+    <target_field/>
+    <non_match_default>SI</non_match_default>
+    <fields>
+      <field>
+        <source_value>3</source_value>
+        <target_value>NO</target_value>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1440</xloc>
+      <yloc>800</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>clasificacion tipo vivienda</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <field_to_use>tipoVivienda</field_to_use>
+    <target_field/>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>1</source_value>
+        <target_value>Casa</target_value>
+      </field>
+      <field>
+        <source_value>2</source_value>
+        <target_value>Apartamento</target_value>
+      </field>
+      <field>
+        <source_value>3</source_value>
+        <target_value>Apartamento</target_value>
+      </field>
+      <field>
+        <source_value>4</source_value>
+        <target_value>Apartamento</target_value>
+      </field>
+      <field>
+        <source_value>5</source_value>
+        <target_value>Otros</target_value>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>816</xloc>
+      <yloc>784</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>clasifico tipo empresa</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <field_to_use>nomTipoEmp</field_to_use>
+    <target_field/>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>Exp</source_value>
+        <target_value>Expendedores</target_value>
+      </field>
+      <field>
+        <source_value>Elab</source_value>
+        <target_value>Elaboradores</target_value>
+      </field>
+      <field>
+        <source_value>Exp-elab</source_value>
+        <target_value>Elaboradores-Expendedores </target_value>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>496</xloc>
+      <yloc>928</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>divido dias de rango</name>
     <type>FieldSplitter</type>
     <description/>
@@ -576,6 +1696,84 @@
     </step>
 
   <step>
+    <name>elimino columna departamento</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>nomAsentamiento</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>tipoVivienda</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>nomEstrato</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>nomSanitaria</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>479</xloc>
+      <yloc>810</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>elimino columna departamento 3</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>NRO_DOCUMENTO</name>
+        <rename>rut</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMPRESA</name>
+        <rename>razonSocial</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>RUBRO</name>
+        <rename>nomTipoEmp</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DIR_LOCAL</name>
+        <rename>dirLocal</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>CCZ</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ESTADO_LOCAL</name>
+        <rename>nomHabilitado</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>208</xloc>
+      <yloc>896</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>elimino id duplicado del circuito</name>
     <type>SelectValues</type>
     <description/>
@@ -585,19 +1783,11 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <fields>      <field>        <name>COD_CIRCUITO</name>
-        <rename/>
+    <fields>      <field>        <name>VERTICES</name>
+        <rename>verticecircuito</rename>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>VERTICES</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>GID</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>COD_CIRCUITO_1</name>
+      </field>      <field>        <name>idCircuito</name>
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
@@ -609,9 +1799,12 @@
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
+      </field>      <field>        <name>idCont</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
-      <remove>        <name>COD_CIRCUITO_1</name>
-      </remove>    </fields>     <cluster_schema/>
+    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>1056</xloc>
       <yloc>96</yloc>
@@ -635,6 +1828,43 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>576</xloc>
       <yloc>496</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>guardo dimension Empresas</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>dbdw2018</connection>
+    <schema>public</schema>
+    <table>localesDeEmpresas</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>864</xloc>
+      <yloc>928</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -672,6 +1902,43 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>1152</xloc>
       <yloc>0</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>guardo dimension hogares</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>dbdw2018</connection>
+    <schema>public</schema>
+    <table>hogares</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1440</xloc>
+      <yloc>675</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -837,42 +2104,12 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <fields>      <field>        <name>GID</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>COD_CIRCUITO</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>dias</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>rango_horario</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>X</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>Y</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>dias_1</name>
-        <rename/>
+    <fields>      <field>        <name>dias_1</name>
+        <rename>nomDia</rename>
         <length>-2</length>
         <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
-      <remove>        <name>GID</name>
-      </remove>      <remove>        <name>COD_CIRCUITO</name>
-      </remove>      <remove>        <name>dias</name>
-      </remove>      <remove>        <name>rango_horario</name>
-      </remove>      <remove>        <name>X</name>
-      </remove>      <remove>        <name>Y</name>
-      </remove>    </fields>     <cluster_schema/>
+    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>640</xloc>
       <yloc>240</yloc>
@@ -924,6 +2161,34 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>464</xloc>
       <yloc>272</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>obtengo hogares de montevideo</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>elimino columna departamento</send_true_to>
+<send_false_to>Dummy (do nothing)</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>departamento</leftvalue>
+ <function>=</function>
+ <rightvalue/>
+ <value><name>constant</name><type>String</type><text>1</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>331</xloc>
+      <yloc>778</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -988,38 +2253,6 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>864</xloc>
       <yloc>128</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>ordeno por tipo de dia</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-      <directory>%%java.io.tmpdir%%</directory>
-      <prefix>out</prefix>
-      <sort_size>1000000</sort_size>
-      <free_memory/>
-      <compress>N</compress>
-      <compress_variable/>
-      <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>nomTipo</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-      </field>
-    </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>848</xloc>
-      <yloc>400</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -1148,6 +2381,10 @@
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
+      </field>      <field>        <name>idCont</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
       <remove>        <name>TURNO_HORARIO</name>
       </remove>    </fields>     <cluster_schema/>
@@ -1189,15 +2426,15 @@
       </remove>      <remove>        <name>MUNICIPIO</name>
       </remove>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>531</xloc>
-      <yloc>38</yloc>
+      <xloc>395</xloc>
+      <yloc>37</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>ESRI Shapefile Reader</name>
-    <type>ShapeFileReader</type>
+    <name>municipios</name>
+    <type>GISFileInput</type>
     <description/>
     <distribute>Y</distribute>
     <copies>1</copies>
@@ -1205,19 +2442,26 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <shapefilename>C:\grondan\Fing\DW2018\Fuentes\sig_municipios.shp</shapefilename>
-    <dbffilename>C:\grondan\Fing\DW2018\Fuentes\sig_municipios.dbf</dbffilename>
+    <filename>C:\grondan\Fing\Fuentes\sig_municipios.shp</filename>
+    <isfilenameinfield>N</isfilenameinfield>
+    <filenamefield/>
+    <limit>0</limit>
+    <add_rownr>N</add_rownr>
+    <field_rownr/>
+    <gis_file_charset>UTF-8</gis_file_charset>
+    <passing_through_fields>N</passing_through_fields>
+    <accept_stepname/>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>102</xloc>
-      <yloc>588</yloc>
+      <xloc>56</xloc>
+      <yloc>1375</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>Table output</name>
-    <type>TableOutput</type>
+    <name>obtengo forma y nombre de municipios</name>
+    <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
     <copies>1</copies>
@@ -1225,29 +2469,329 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <connection>dbdw2018</connection>
-    <schema>public</schema>
-    <table>testGeographic</table>
-    <commit>1000</commit>
-    <truncate>Y</truncate>
-    <ignore_errors>N</ignore_errors>
-    <use_batch>Y</use_batch>
-    <specify_fields>N</specify_fields>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <tablename_in_field>N</tablename_in_field>
-    <tablename_field/>
-    <tablename_in_table>Y</tablename_in_table>
-    <return_keys>N</return_keys>
-    <return_field/>
-    <fields>
-    </fields>
+    <fields>      <field>        <name>the_geom</name>
+        <rename>the_geom_municipio</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>MUNICIPIO</name>
+        <rename>nomMun</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>211</xloc>
+      <yloc>1364</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Join Rows (cartesian product) 2</name>
+    <type>JoinRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>%%java.io.tmpdir%%</directory>
+      <prefix>out</prefix>
+      <cache_size>500</cache_size>
+      <main/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue/>
+ <function>=</function>
+ <rightvalue/>
+ </condition>
+    </compare>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>398</xloc>
-      <yloc>647</yloc>
+      <xloc>471</xloc>
+      <yloc>1312</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows 3 2</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>me quedo con los campos finales de la tabla</send_true_to>
+<send_false_to>Dummy (do nothing) 5 2</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>the_geomCCZ</leftvalue>
+ <function>GIS_INTERSECTS</function>
+ <rightvalue>the_geom_municipio</rightvalue>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>597</xloc>
+      <yloc>1293</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy (do nothing) 5 2</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>696</xloc>
+      <yloc>1375</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>agrego id municipios</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <valuename>idMun</valuename>
+      <use_database>N</use_database>
+      <connection>dbdw2018</connection>
+      <schema/>
+      <seqname>SEQ_</seqname>
+      <use_counter>Y</use_counter>
+      <counter_name/>
+      <start_at>1</start_at>
+      <increment_by>1</increment_by>
+      <max_value>999999999</max_value>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>379</xloc>
+      <yloc>1391</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>obtengo forma y nombre de municipios 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>the_geom</name>
+        <rename>the_geom_municipio</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>MUNICIPIO</name>
+        <rename>nomMun</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>773</xloc>
+      <yloc>145</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>me quedo con los campos finales de la tabla</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>CCZ</name>
+        <rename>nomCcz</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>idCcz</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NOMBBARR</name>
+        <rename>nomBarrio</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>idBarrio</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>nomMun</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>idMun</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>727</xloc>
+      <yloc>1243</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>agrego id ccz</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <valuename>idCcz</valuename>
+      <use_database>N</use_database>
+      <connection>dbdw2018</connection>
+      <schema/>
+      <seqname>SEQ_</seqname>
+      <use_counter>Y</use_counter>
+      <counter_name/>
+      <start_at>1</start_at>
+      <increment_by>1</increment_by>
+      <max_value>999999999</max_value>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>84</xloc>
+      <yloc>1169</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>agrego id barrio</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>N</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <valuename>idBarrio</valuename>
+      <use_database>N</use_database>
+      <connection>dbdw2018</connection>
+      <schema/>
+      <seqname>SEQ_</seqname>
+      <use_counter>Y</use_counter>
+      <counter_name/>
+      <start_at>1</start_at>
+      <increment_by>1</increment_by>
+      <max_value>999999999</max_value>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>112</xloc>
+      <yloc>1052</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>agrego id circuito interno</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <valuename>idCircuito</valuename>
+      <use_database>N</use_database>
+      <connection>dbdw2018</connection>
+      <schema/>
+      <seqname>SEQ_</seqname>
+      <use_counter>Y</use_counter>
+      <counter_name/>
+      <start_at>1</start_at>
+      <increment_by>1</increment_by>
+      <max_value>999999999</max_value>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>579</xloc>
+      <yloc>28</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>agrego id contenedor interno</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <valuename>idCont</valuename>
+      <use_database>N</use_database>
+      <connection>dbdw2018</connection>
+      <schema/>
+      <seqname>SEQ_</seqname>
+      <use_counter>Y</use_counter>
+      <counter_name/>
+      <start_at>1</start_at>
+      <increment_by>1</increment_by>
+      <max_value>999999999</max_value>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>530</xloc>
+      <yloc>87</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>separo los dias</name>
+    <type>SplitFieldToRows3</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+   <splitfield>dias</splitfield>
+   <delimiter>\s+</delimiter>
+   <newfield>dias_1</newfield>
+   <rownum>N</rownum>
+   <rownum_field/>
+   <resetrownumber>Y</resetrownumber>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>552</xloc>
+      <yloc>208</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
